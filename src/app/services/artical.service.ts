@@ -10,7 +10,7 @@ export class ArticalService {
 
   constructor() { }
 
-  getArticle(): Observable<Artical[]>{
+  getArticles(): Observable<Artical[]>{
     const article: Artical[] = ARTICLES;
     return of(article);
   }

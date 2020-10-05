@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   }
 
   getArticles(): void{
-    this.articleService.getArticle().subscribe(
+    this.articleService.getArticles().subscribe(
       articles => {
          this.articles = articles;
       });
