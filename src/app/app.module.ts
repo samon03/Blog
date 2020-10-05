@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     AboutComponent,
     ArticleComponent,
-    HomeComponent
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

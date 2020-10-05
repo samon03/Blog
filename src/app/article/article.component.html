@@ -1,2 +1,10 @@
-<p>{{article.title}}</p>
-<p>{{article.description}}</p>
+<div class="single-article">
+  <div class="image">
+    <img [src]="article.imageUrl">
+  </div>
+   <h2>{{article.title}}</h2>
+   <div>
+     <label>{{article.date | date}}</label>
+   </div>
+   <p [innerHTML]="article.content"></p>
+</div>
