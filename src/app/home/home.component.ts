@@ -1,21 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { ArticalService } from '../services/artical.service';
-import { Artical } from '../shared/artical';
-import { ARTICLES } from '../shared/articals';
+import { Artical } from '../shared/article';
 
 @Component({
-  selector: 'app-artical',
-  templateUrl: './artical.component.html',
-  styleUrls: ['./artical.component.scss']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class ArticalComponent implements OnInit {
-
+export class HomeComponent implements OnInit {
   articles: Artical[] = [];
 
-  constructor(private articalService: ArticalService) { }
+  constructor(private articleService: ArticalService) { }
 
   ngOnInit(): void {
-
     // get values directly from ARTICLES array
     // this.articles = ARTICLES;
 
@@ -25,11 +22,10 @@ export class ArticalComponent implements OnInit {
   }
 
   getArticles(): void{
-    this.articalService.getArticle().subscribe(
+    this.articleService.getArticle().subscribe(
       articles => {
          this.articles = articles;
       });
   }
-
 
 }
