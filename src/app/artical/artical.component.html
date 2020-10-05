@@ -1,1 +1,25 @@
-<p>artical works!</p>
+<div class="artical" *ngFor="let article of articles">
+
+  <mat-card class="card">
+    <mat-card-content class="card-body">
+
+      <div>
+        <img [src]='article.imageUrl'/>
+      </div>
+
+      <div>
+         <h3>
+           {{ article.title }}
+         </h3>
+         <div class="meta-info">
+           {{article.date.toDateString()}}
+         </div>
+         <p [innerHTML]='article.description'></p>
+          <a href="#" class="continue-reading">Continue Reading</a>
+      </div>
+
+    </mat-card-content>
+  </mat-card>
+</div>
+
+

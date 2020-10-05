@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Artical } from '../shared/artical';
+import { ARTICLES } from '../shared/articals';
 
 @Component({
   selector: 'app-artical',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticalComponent implements OnInit {
 
+  articles: Artical[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
+    this.articles = ARTICLES;
+    console.log(this.articles);
   }
 
 }
