@@ -15,7 +15,7 @@
            {{article.date.toDateString()}}
          </div>
          <p [innerHTML]='article.description'></p>
-          <a href="#" class="continue-reading">Continue Reading</a>
+          <a routerLink="/{{article.key}}" class="continue-reading">Continue Reading</a>
       </div>
 
     </mat-card-content>

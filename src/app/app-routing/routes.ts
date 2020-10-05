@@ -9,6 +9,7 @@ export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'article', component: ArticleComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'home', redirectTo: '', pathMatch: 'full' }
+  { path: 'home', redirectTo: '', pathMatch: 'full' },
+  { path: ':key', component: ArticleComponent }
 
 ];
