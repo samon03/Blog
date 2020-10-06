@@ -8,7 +8,9 @@ import { routes } from './routes';
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {
+    initialNavigation: 'enabled'
+})
   ],
   exports: [RouterModule]
 })
