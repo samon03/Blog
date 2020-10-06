@@ -19,7 +19,7 @@ export const ARTICLES: Artical[] = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     key: 'second-artical',
     date: new Date(),
-    imageUrl: 'http://icons.iconarchive.com/icons/wineass/ios7-redesign/256/Pictures-icon.png'
+    imageUrl: 'https://coronalabs.com/wordpress/wp-content/uploads/2014/11/Corona-Icon.png'
   }
 
 ];

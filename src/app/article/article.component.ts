@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ArticalService } from '../services/artical.service';
+import { SharedService } from '../services/shared.service';
 import { Artical } from '../shared/article';
 
 @Component({
@@ -14,7 +16,9 @@ export class ArticleComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
               private articleService: ArticalService,
-              private router: Router) { }
+              private router: Router,
+              private titleService: Title,
+              private sharedService: SharedService) { }
 
   ngOnInit(): void {
 
@@ -28,7 +32,7 @@ export class ArticleComponent implements OnInit {
         }
 
         this.article = article;
-        console.log(this.article);
+        this.titleService.setTitle(`${this.article.title} - ${this.sharedService.blogTitle}`);
 
       });
     });

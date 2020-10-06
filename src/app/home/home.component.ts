@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ArticalService } from '../services/artical.service';
+import { SharedService } from '../services/shared.service';
 import { Artical } from '../shared/article';
 
 @Component({
@@ -10,14 +12,14 @@ import { Artical } from '../shared/article';
 export class HomeComponent implements OnInit {
   articles: Artical[] = [];
 
-  constructor(private articleService: ArticalService) { }
+  constructor(private articleService: ArticalService,
+              private titleService: Title,
+              private sharedService: SharedService) { }
 
   ngOnInit(): void {
-    // get values directly from ARTICLES array
-    // this.articles = ARTICLES;
 
-     // get values from Artical service
-     this.getArticles();
+    this.titleService.setTitle(`${this.sharedService.blogTitle}`);
+    this.getArticles();
 
   }
 
