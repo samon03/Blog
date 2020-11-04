@@ -1,0 +1,16 @@
+<div class="artical">
+  <form novalidate>
+    <mat-card class="card">
+        <input matInput type="text" class="input-text" formControlName="title" placeholder="Title" required>
+        <br/><br/>
+        <input matInput type="text"  class="input-text" formControlName="imageUrl" placeholder="Image URL" required>
+        <br/><br/>
+      <mat-card-content class="card-body">
+        <textarea matInput formControlName="description" placeholder="Description" rows="8" cols="80" required></textarea>
+      </mat-card-content>
+        <button type="submit" mat-button [disabled]="feedbackForm.invalid">Submit</button>
+    </mat-card>
+  </form>
+
+</div>
+

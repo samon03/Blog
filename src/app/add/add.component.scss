@@ -1,0 +1,43 @@
+.card
+{
+   border: 1px solid #e0ebeb;
+   border-radius: 5px;
+   padding: 10%;
+}
+
+.card-body
+{
+  display: flex;
+}
+
+img
+{
+  max-height: 150px;
+  padding: 2px;
+  align-items: center;
+}
+
+.input-text
+{
+  width: 60%;
+}
+
+input, textarea
+{
+  border: none;
+  font-size: 1rem;
+  padding: 5px;
+  margin: 5px;
+  border-bottom: 1px solid #adadad;
+}
+
+button
+{
+  border: none;
+  float: right;
+  color: #e0ebeb;
+  background-color: rgb(58, 106, 209);
+  border-radius: 5%;
+  padding: 10px;
+  margin: 10px;
+}
