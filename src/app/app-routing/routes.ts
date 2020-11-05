@@ -12,7 +12,7 @@ export const routes: Routes = [
   { path: 'add', component: AddComponent },
   { path: '404', component: NotFoundComponent },
   { path: 'home', redirectTo: '', pathMatch: 'full' },
-  { path: ':key', component: ArticleComponent },
+  { path: ':id', component: ArticleComponent },
   { path: '**', component: NotFoundComponent }
 
 ];

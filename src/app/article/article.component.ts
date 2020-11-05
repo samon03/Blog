@@ -24,8 +24,9 @@ export class ArticleComponent implements OnInit {
   ngOnInit(): void {
 
     this.route.params.subscribe(params => {
-      const key = params.key;
-      this.articleService.getArticle(key).subscribe(article => {
+      console.log("id from article.component "+ params.id);
+      const id = params.id;
+      this.articleService.getArticle(id).subscribe(article => {
 
         if (article === undefined) {
           this.router.navigateByUrl('404');
@@ -34,35 +35,6 @@ export class ArticleComponent implements OnInit {
 
         this.article = article;
         this.titleService.setTitle(`${this.article.title} - ${this.sharedService.blogTitle}`);
-
-        this.meta.addTags([
-          { name: 'description', content: this.article.description},
-          {
-            property: 'og:title',
-            content: `${this.article.title} - ${this.sharedService.blogTitle}`
-          },
-          {
-            property: 'og:type',
-            content: 'website'
-          },
-          {
-            property: 'og:url',
-            content: this.sharedService.baseUrl + this.article.key
-          },
-          {
-            property: 'og:image',
-            content: this.article.imageUrl
-          },
-          {
-            property: 'og:description',
-            content: this.article.description
-          },
-          {
-            property: 'og:site_name',
-            content: this.sharedService.blogTitle
-          }
-
-        ]);
 
       });
 

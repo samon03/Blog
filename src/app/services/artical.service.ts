@@ -9,7 +9,7 @@ import { ARTICLES } from '../shared/articles';
 })
 export class ArticalService {
 
-  readonly baseURL = 'https://my-json-server.typicode.com/samon03/blog-api/articles';
+  readonly baseURL = 'http://localhost:3000/articles';
 
   constructor(private http: HttpClient) { }
 
@@ -21,10 +21,12 @@ export class ArticalService {
   }
 
 
-  getArticle(key: string): Observable<Artical> {
-    // return this.http.get<Artical>(this.baseURL);
-    const article: Artical[] = ARTICLES.filter(a => a.key === key);
-    return of(article[0]);
+  getArticle(id: Number): Observable<Artical> {
+    console.log("id from service"+ id);
+    return this.http.get<Artical>(this.baseURL + `/${id}`);
+
+    // const article: Artical[] = ARTICLES.filter(a => a.key === key);
+    // return of(article[0]);
   }
 
 }

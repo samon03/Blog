@@ -1,21 +1,41 @@
-[
-  {
-    "id": 1,
-    "title": "Nullam",
-    "content": "Nullam a convallis nulla, hendrerit aliquet mauris. Maecenas volutpat tellus tortor, at pretium enim iaculis quis. Etiam consequat risus non mi rhoncus maximus. Cras eleifend pulvinar dui, sed posuere sapien maximus ac. Vestibulum mauris lectus, ultricies vel suscipit dapibus, pharetra ut turpis. Quisque in nisi eros. Integer congue tristique malesuada. Pellentesque vitae aliquet magna. Vivamus sed felis mauris. Phasellus tincidunt tortor leo, a facilisis sem scelerisque vel. Nam malesuada sed erat in porta. Ut at elementum nisi, vitae euismod enim. Nunc porta magna at rhoncus mollis. Nam mattis a purus et mollis." ,
-    "description": "Nullam a convallis nulla, hendrerit aliquet mauris.",
-    "key": "first-artical",
-    "date": "new Date()",
-    "imageUrl": "http://icons.iconarchive.com/icons/wineass/ios7-redesign/256/Pictures-icon.png"
-  },
+ [
+    {
+      "id": 1,
+      "title": "Nullam",
+      "content": "Nullam a convallis nulla, hendrerit aliquet mauris. Maecenas volutpat tellus tortor, at pretium enim iaculis quis. Etiam consequat risus non mi rhoncus maximus. Cras eleifend pulvinar dui, sed posuere sapien maximus ac. Vestibulum mauris lectus, ultricies vel suscipit dapibus, pharetra ut turpis. Quisque in nisi eros. Integer congue tristique malesuada. Pellentesque vitae aliquet magna. Vivamus sed felis mauris. Phasellus tincidunt tortor leo, a facilisis sem scelerisque vel. Nam malesuada sed erat in porta. Ut at elementum nisi, vitae euismod enim. Nunc porta magna at rhoncus mollis. Nam mattis a purus et mollis." ,
+      "description": "Nullam a convallis nulla, hendrerit aliquet mauris.",
+      "key": "first-artical",
+      "date": "Nov 4, 2020",
+      "imageUrl": "http://icons.iconarchive.com/icons/wineass/ios7-redesign/256/Pictures-icon.png"
+    },
 
-  {
-    "id": 2,
-    "title": "Lorem ipsum",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nam rhoncus arcu diam, vitae laoreet urna aliquam fermentum. Nulla condimentum hendrerit sodales.Praesent tellus sem, vehicula et dolor non, semper molestie odio. Integer ultrices eros et velit ullamcorper, nec cursus nunc posuere. Donec quam elit, tempor sit amet lacus at, dapibus tincidunt velit.",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "key": "second-artical",
-    "date": "new Date()",
-    "imageUrl": "https://coronalabs.com/wordpress/wp-content/uploads/2014/11/Corona-Icon.png"
-  }
-]
+    {
+      "id": 2,
+      "title": "Lorem ipsum",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nam rhoncus arcu diam, vitae laoreet urna aliquam fermentum. Nulla condimentum hendrerit sodales.Praesent tellus sem, vehicula et dolor non, semper molestie odio. Integer ultrices eros et velit ullamcorper, nec cursus nunc posuere. Donec quam elit, tempor sit amet lacus at, dapibus tincidunt velit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "key": "second-artical",
+      "date": "Nov 5, 2020",
+      "imageUrl": "https://coronalabs.com/wordpress/wp-content/uploads/2014/11/Corona-Icon.png"
+    },
+
+    {
+      "id": 3,
+      "title": "Lam",
+      "content": "Lam a convallis nulla, hendrerit aliquet mauris. Maecenas volutpat tellus tortor, at pretium enim iaculis quis. Etiam consequat risus non mi rhoncus maximus. Cras eleifend pulvinar dui, sed posuere sapien maximus ac. Vestibulum mauris lectus, ultricies vel suscipit dapibus, pharetra ut turpis. Quisque in nisi eros. Integer congue tristique malesuada. Pellentesque vitae aliquet magna. Vivamus sed felis mauris. Phasellus tincidunt tortor leo, a facilisis sem scelerisque vel. Nam malesuada sed erat in porta. Ut at elementum nisi, vitae euismod enim. Nunc porta magna at rhoncus mollis. Nam mattis a purus et mollis." ,
+      "description": "Lam a convallis nulla, hendrerit aliquet mauris.",
+      "key": "third-artical",
+      "date": "Nov 4, 2020",
+      "imageUrl": "http://icons.iconarchive.com/icons/wineass/ios7-redesign/256/Pictures-icon.png"
+    },
+
+    {
+      "id": 2,
+      "title": "Lpsum",
+      "content": "Lpsum dolor sit amet, consectetur adipiscing elit.Nam rhoncus arcu diam, vitae laoreet urna aliquam fermentum. Nulla condimentum hendrerit sodales.Praesent tellus sem, vehicula et dolor non, semper molestie odio. Integer ultrices eros et velit ullamcorper, nec cursus nunc posuere. Donec quam elit, tempor sit amet lacus at, dapibus tincidunt velit.",
+      "description": "Lpsum dolor sit amet, consectetur adipiscing elit.",
+      "key": "forth-artical",
+      "date": "Nov 5, 2020",
+      "imageUrl": "https://coronalabs.com/wordpress/wp-content/uploads/2014/11/Corona-Icon.png"
+    }
+  ]
