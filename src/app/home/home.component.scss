@@ -28,3 +28,22 @@ img
 {
   color: mediumslateblue;
 }
+
+.part-2
+{
+  padding: 0 1em;
+}
+
+.content
+{
+  width: 400px;
+}
+
+.content p
+{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+}

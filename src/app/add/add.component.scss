@@ -10,25 +10,13 @@
   display: flex;
 }
 
-img
-{
-  max-height: 150px;
-  padding: 2px;
-  align-items: center;
-}
-
-.input-text
-{
-  width: 60%;
-}
-
 input, textarea
 {
-  border: none;
+  // border: none;
   font-size: 1rem;
   padding: 5px;
   margin: 5px;
-  border-bottom: 1px solid #adadad;
+  // border-bottom: 1px solid #adadad;
 }
 
 button
@@ -38,6 +26,19 @@ button
   color: #e0ebeb;
   background-color: rgb(58, 106, 209);
   border-radius: 5%;
-  padding: 10px;
-  margin: 10px;
+}
+
+
+///
+
+mat-form-field
+{
+  width: 96%;
+  padding: 0 3%;
+}
+
+.full-width
+{
+  width: 90%;
+  padding: 0 5%;
 }

@@ -9,6 +9,9 @@ import { ARTICLES } from '../shared/articles';
 })
 export class ArticalService {
 
+
+  selectedArticle: Artical;
+
   readonly baseURL = 'http://localhost:3000/articles';
 
   constructor(private http: HttpClient) { }
@@ -22,11 +25,14 @@ export class ArticalService {
 
 
   getArticle(id: Number): Observable<Artical> {
-    console.log("id from service"+ id);
     return this.http.get<Artical>(this.baseURL + `/${id}`);
 
     // const article: Artical[] = ARTICLES.filter(a => a.key === key);
     // return of(article[0]);
+  }
+
+  postArticle(artical: Artical): Observable<Artical[]>{
+    return this.http.post<Artical[]>(this.baseURL, artical);
   }
 
 }

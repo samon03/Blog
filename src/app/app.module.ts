@@ -8,8 +8,10 @@ import { ArticleComponent } from './article/article.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-// import { FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeComponent } from './home/home.component';
@@ -32,7 +34,10 @@ import { AddComponent } from './add/add.component';
     AppRoutingModule,
     MatCardModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    MatButtonModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

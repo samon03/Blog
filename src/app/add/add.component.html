@@ -1,16 +1,27 @@
 <div class="artical">
-  <form novalidate>
-    <mat-card class="card">
-        <input matInput type="text" class="input-text" formControlName="title" placeholder="Title" required>
-        <br/><br/>
-        <input matInput type="text"  class="input-text" formControlName="imageUrl" placeholder="Image URL" required>
-        <br/><br/>
-      <mat-card-content class="card-body">
-        <textarea matInput formControlName="description" placeholder="Description" rows="8" cols="80" required></textarea>
-      </mat-card-content>
-        <button type="submit" mat-button [disabled]="feedbackForm.invalid">Submit</button>
-    </mat-card>
-  </form>
+  <mat-card class="card">
+    <!-- #articleForm="ngForm" (ngSubmit)="onSubmit(articleForm)" -->
+    <form novalidate >
+      <!-- <mat-card-content class="card-body"> -->
+        <mat-form-field>
+          <input matInput type="text" name="title" #name="ngModel" [(ngModel)]="articleService.selectedArticle.title" placeholder="Title" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="text" name="imageUrl" #name="ngModel" [(ngModel)]="articleService.selectedArticle.imageUrl" placeholder="Image URL" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="date" name="date" #name="ngModel" [(ngModel)]="articleService.selectedArticle.date" placeholder="Date" required>
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <textarea matInput name="description" #name="ngModel" [(ngModel)]="articleService.selectedArticle.description" placeholder="Description" rows="8" cols="80" required></textarea>
+        </mat-form-field>
+      <!-- </mat-card-content> -->
+      <mat-card-actions class="card-actions">
+        <!-- [disabled]="!articleForm.valid" -->
+        <button type="submit" mat-button>Submit</button>
+    </mat-card-actions>
 
+    </form>
+  </mat-card>
 </div>
 

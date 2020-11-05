@@ -7,14 +7,16 @@
         <img [src]='article.imageUrl'/>
       </div>
 
-      <div>
+      <div class="part-2">
          <h3>
            {{ article.title }}
          </h3>
          <div class="meta-info">
            {{article.date | date}}
          </div>
-         <p [innerHTML]="article.description"></p>
+         <div class="content">
+          <p [innerHTML]="article.description"></p>
+         </div>
           <a routerLink="/{{article.id}}" class="continue-reading">Continue Reading</a>
       </div>
 
