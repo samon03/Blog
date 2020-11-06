@@ -31,8 +31,7 @@ export class ArticalService {
     // return of(article[0]);
   }
 
-  postArticle(artical: Artical): Observable<Artical[]>{
-    return this.http.post<Artical[]>(this.baseURL, artical);
+  postArticle(artical: Artical): Observable<Artical>{
+    return this.http.post<Artical>(this.baseURL, artical);
   }
-
 }

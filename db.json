@@ -1,19 +1,36 @@
 {
   "articles": [
-      {
-        "id": 1,
-        "title": "Nullam",
-        "imageUrl": "http://icons.iconarchive.com/icons/wineass/ios7-redesign/256/Pictures-icon.png",
-        "date": "Nov 4, 2020",
-        "description": "Nullam a convallis nulla, hendrerit aliquet mauris. Maecenas volutpat tellus tortor, at pretium enim iaculis quis. Etiam consequat risus non mi rhoncus maximus. Cras eleifend pulvinar dui, sed posuere sapien maximus ac. Vestibulum mauris lectus, ultricies vel suscipit dapibus, pharetra ut turpis. Quisque in nisi eros. Integer congue tristique malesuada. Pellentesque vitae aliquet magna. Vivamus sed felis mauris. Phasellus tincidunt tortor leo, a facilisis sem scelerisque vel. Nam malesuada sed erat in porta. Ut at elementum nisi, vitae euismod enim. Nunc porta magna at rhoncus mollis. Nam mattis a purus et mollis."
-      },
-
-      {
-        "id": 2,
-        "title": "Lorem ipsum",
-        "imageUrl": "https://coronalabs.com/wordpress/wp-content/uploads/2014/11/Corona-Icon.png",
-        "date": "Nov 5, 2020",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nam rhoncus arcu diam, vitae laoreet urna aliquam fermentum. Nulla condimentum hendrerit sodales.Praesent tellus sem, vehicula et dolor non, semper molestie odio. Integer ultrices eros et velit ullamcorper, nec cursus nunc posuere. Donec quam elit, tempor sit amet lacus at, dapibus tincidunt velit."
-      }
+    {
+      "id": 1,
+      "title": "Nullam",
+      "imageUrl": "http://icons.iconarchive.com/icons/wineass/ios7-redesign/256/Pictures-icon.png",
+      "date": "Nov 4, 2020",
+      "description": "Nullam a convallis nulla, hendrerit aliquet mauris. Maecenas volutpat tellus tortor, at pretium enim iaculis quis. Etiam consequat risus non mi rhoncus maximus. Cras eleifend pulvinar dui, sed posuere sapien maximus ac. Vestibulum mauris lectus, ultricies vel suscipit dapibus, pharetra ut turpis. Quisque in nisi eros. Integer congue tristique malesuada. Pellentesque vitae aliquet magna. Vivamus sed felis mauris. Phasellus tincidunt tortor leo, a facilisis sem scelerisque vel. Nam malesuada sed erat in porta. Ut at elementum nisi, vitae euismod enim. Nunc porta magna at rhoncus mollis. Nam mattis a purus et mollis."
+    },
+    {
+      "id": 2,
+      "title": "Lorem ipsum",
+      "imageUrl": "https://coronalabs.com/wordpress/wp-content/uploads/2014/11/Corona-Icon.png",
+      "date": "Nov 5, 2020",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nam rhoncus arcu diam, vitae laoreet urna aliquam fermentum. Nulla condimentum hendrerit sodales.Praesent tellus sem, vehicula et dolor non, semper molestie odio. Integer ultrices eros et velit ullamcorper, nec cursus nunc posuere. Donec quam elit, tempor sit amet lacus at, dapibus tincidunt velit."
+    },
+    {
+      "title": "Mauris XZ",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg",
+      "description": "admsd ad karde na choti moti galtio ko maf",
+      "id": 2
+    },
+    {
+      "title": "Emon",
+      "imageUrl": "http://www.worthview.com/wp-content/uploads/2011/01/The_Alchemist.jpg",
+      "description": "Level up with Stack Overflow while you work. Share knowledge privately with your coworkers using our flagship Q&A engine.",
+      "id": 3
+    },
+    {
+      "title": "Proin lectus",
+      "imageUrl": "https://tse4.mm.bing.net/th?id=OIP.yDsknGSUPlPBIBPno12naQHaG6&pid=Api",
+      "description": "Proin lectus metus, mollis non faucibus ac, auctor ut sem. Morbi sit amet mauris in risus pellentesque porta. Cras feugiat dui convallis nunc fermentum, a aliquet diam porta. Morbi pretium at urna vitae hendrerit. Sed pellentesque accumsan nibh sit amet tempus. Duis quam sapien, rhoncus non elementum sit amet, pulvinar vitae neque. Vestibulum sed elit vitae velit volutpat ornare. Curabitur sed ultrices neque, sed tincidunt dui. Aliquam ut lorem et lorem scelerisque dictum. ",
+      "id": 4
+    }
   ]
 }

@@ -1,3 +1,4 @@
+import { Artical } from '../shared/article';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from "@angular/forms";
 import { ArticalService } from '../services/artical.service';
@@ -10,7 +11,9 @@ import { ArticalService } from '../services/artical.service';
 })
 export class AddComponent implements OnInit {
 
-  constructor(public articleService: ArticalService) { }
+  article: Artical[];
+
+  constructor(public articalService: ArticalService) { }
 
   ngOnInit(): void {
 
@@ -18,9 +21,24 @@ export class AddComponent implements OnInit {
 
   onSubmit(form: NgForm)
   {
-    this.articleService.postArticle(form.value).subscribe(val => {
-        console.log(val);
+      this.articalService.postArticle(form.value).subscribe(artical => {
+        console.log(artical);
+        // this.article = article;
+        this.resetForm(form);
     });
   }
 
+  resetForm(form?: NgForm)
+  {
+    if (form) {
+      form.reset();
+      this.articalService.selectedArticle = {
+        id: null,
+        title: '',
+        date: new Date(),
+        imageUrl: '',
+        description: ''
+      };
+    }
+  }
 }

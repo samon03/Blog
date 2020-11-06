@@ -1,24 +1,22 @@
 <div class="artical">
   <mat-card class="card">
-    <!-- #articleForm="ngForm" (ngSubmit)="onSubmit(articleForm)" -->
-    <form novalidate >
+    <!--  -->
+    <form #articleForm="ngForm" (ngSubmit)="onSubmit(articleForm)">
       <!-- <mat-card-content class="card-body"> -->
         <mat-form-field>
-          <input matInput type="text" name="title" #name="ngModel" [(ngModel)]="articleService.selectedArticle.title" placeholder="Title" required>
+          <input matInput name="title" placeholder="Title" required ngModel>
         </mat-form-field>
         <mat-form-field>
-          <input matInput type="text" name="imageUrl" #name="ngModel" [(ngModel)]="articleService.selectedArticle.imageUrl" placeholder="Image URL" required>
-        </mat-form-field>
-        <mat-form-field>
-          <input matInput type="date" name="date" #name="ngModel" [(ngModel)]="articleService.selectedArticle.date" placeholder="Date" required>
+          <input matInput name="imageUrl" placeholder="Image URL" required ngModel>
         </mat-form-field>
         <mat-form-field class="full-width">
-          <textarea matInput name="description" #name="ngModel" [(ngModel)]="articleService.selectedArticle.description" placeholder="Description" rows="8" cols="80" required></textarea>
+          <textarea matInput name="description" placeholder="Description" rows="8" cols="80" required ngModel></textarea>
         </mat-form-field>
       <!-- </mat-card-content> -->
       <mat-card-actions class="card-actions">
-        <!-- [disabled]="!articleForm.valid" -->
-        <button type="submit" mat-button>Submit</button>
+        <!-- -->
+        <button type="submit" mat-button [disabled]="!articleForm.valid">Submit</button>
+        <button type="button" mat-button (click)="resetForm(articleForm)">Reset</button>
     </mat-card-actions>
 
     </form>
