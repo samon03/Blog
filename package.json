@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "heroku-postbuild": "ng build --prod",
+    "start": "node server.js",
     "build": "ng build",
     "json:server": "json-server --watch db.json",
     "test": "ng test",
@@ -14,8 +15,14 @@
     "build:ssr": "ng build --prod && ng run Blog:server:production",
     "prerender": "ng run Blog:prerender"
   },
+  "engines": {
+    "node": "13.11.0",
+    "npm": "6.14.9"
+  },
   "private": true,
   "dependencies": {
+    "@angular/cli": "^11.0.4",
+    "@angular/compiler-cli": "^10.1.6",
     "@angular/animations": "~10.1.1",
     "@angular/cdk": "^10.2.3",
     "@angular/common": "~10.1.1",
@@ -33,17 +40,18 @@
     "json-server": "^0.16.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "typescript": "~4.0.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1001.1",
-    "@angular/cli": "~10.1.1",
-    "@angular/compiler-cli": "~10.1.1",
+    "@angular/cli": "^11.0.4",
+    "@angular/compiler-cli": "^10.1.6",
     "@nguniversal/builders": "^10.1.0",
     "@types/express": "^4.17.0",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
