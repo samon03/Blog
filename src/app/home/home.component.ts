@@ -30,4 +30,12 @@ export class HomeComponent implements OnInit {
       });
   }
 
+  delete(id: any)
+  {
+     console.log(id);
+     this.articleService.deleteArtical(id).subscribe(() => {
+      this.getArticles();
+     });
+  }
+
 }

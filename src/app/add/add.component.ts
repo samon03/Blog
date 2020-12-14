@@ -2,6 +2,7 @@ import { Artical } from '../shared/article';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from "@angular/forms";
 import { ArticalService } from '../services/artical.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add',
@@ -13,7 +14,8 @@ export class AddComponent implements OnInit {
 
   article: Artical[];
 
-  constructor(public articalService: ArticalService) { }
+  constructor(public articalService: ArticalService,
+    private router: Router) { }
 
   ngOnInit(): void {
 
@@ -25,7 +27,9 @@ export class AddComponent implements OnInit {
         console.log(artical);
         // this.article = article;
         this.resetForm(form);
+        this.router.navigate(['/home']);
     });
+
   }
 
   resetForm(form?: NgForm)

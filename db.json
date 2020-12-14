@@ -1,22 +1,18 @@
 {
   "articles": [
     {
-      "title": "Mauris XZ",
+      "title": "Lorem Ipsum",
       "imageUrl": "http://icons.iconarchive.com/icons/wineass/ios7-redesign/256/Pictures-icon.png",
-      "description": "Nullam a convallis nulla, hendrerit aliquet mauris. Maecenas volutpat tellus tortor, at pretium enim iaculis quis. Etiam consequat risus non mi rhoncus maximus. Cras eleifend pulvinar dui, sed posuere sapien maximus ac. Vestibulum mauris lectus, ultricies vel suscipit dapibus, pharetra ut turpis. Quisque in nisi eros. Integer congue tristique malesuada. Pellentesque vitae aliquet magna. Vivamus sed felis mauris. Phasellus tincidunt tortor leo, a facilisis sem scelerisque vel. Nam malesuada sed erat in porta. Ut at elementum nisi, vitae euismod enim. Nunc porta magna at rhoncus mollis. Nam mattis a purus et mollis.",
-      "id": 1
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "date": "2020-12-14T08:47:19.925Z",
+      "id": 6
     },
     {
-      "title": "Lorem ipsum",
+      "title": "Contrary ",
       "imageUrl": "https://coronalabs.com/wordpress/wp-content/uploads/2014/11/Corona-Icon.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nam rhoncus arcu diam, vitae laoreet urna aliquam fermentum. Nulla condimentum hendrerit sodales.Praesent tellus sem, vehicula et dolor non, semper molestie odio. Integer ultrices eros et velit ullamcorper, nec cursus nunc posuere. Donec quam elit, tempor sit amet lacus at, dapibus tincidunt velit.",
-      "id": 2
-    },
-    {
-      "title": "Just  XD",
-      "imageUrl": "https://coronalabs.com/wordpress/wp-content/uploads/2014/11/Corona-Icon.png",
-      "description": "\n\nJust my 2 cents in case someone stumble upon this :)\n\nWhat I am suggesting here will have the same result as the current answer however it has been recommended to write your controller the way that I have mentioned here.",
-      "id": 3
+      "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.",
+      "date": "2020-12-14T09:24:48.307Z",
+      "id": 7
     }
   ]
 }

@@ -1,6 +1,8 @@
 <div class="artical" *ngFor="let article of articles">
-
   <mat-card class="card">
+    <button type="button" class="delete__button" mat-button (click)="delete(article.id)">
+      <b>x</b>
+    </button>
     <mat-card-content class="card-body">
 
       <div>

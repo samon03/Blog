@@ -32,6 +32,11 @@ export class ArticalService {
   }
 
   postArticle(artical: Artical): Observable<Artical>{
+    artical.date = new Date();
     return this.http.post<Artical>(this.baseURL, artical);
+  }
+
+  deleteArtical(id: number): Observable<Artical[]>{
+    return this.http.delete<Artical[]>(this.baseURL + `/${id}`);
   }
 }
